@@ -24,7 +24,7 @@ public class Extensions {
         ".QT",
         ".FLV",
         ".SWF",
-        ".3g2",
-        ".3gp"
+        ".3G2",
+        ".3GP"
     });
 }

@@ -88,6 +88,7 @@ public class CommonForm {
                 }
             }
 
+            StateMachine.mode = Mode.DONE;
         } catch (Exception ex) {
             StateMachine.mode = Mode.DONE;
 
@@ -120,7 +121,7 @@ public class CommonForm {
                 } else {
 
                 }
-                StateMachine.rootFolder = new File(folderTextField.getText());
+                StateMachine.rootFolder = new File(folderTextField.getText()).getParentFile();
             }
 
             StateMachine.show = RenameWorker.getShowTitleAndSeason();
@@ -181,7 +182,7 @@ public class CommonForm {
 
                 File renameLog = getRenameLog();
                 statusField.append(str + "We wrote a log of the files we will rename to \r\n" + renameLog +
-                    "\r\nPress the 'Start' button again");
+                    "\r\nPress the 'Start' button again\r\n");
 
                 try (PrintWriter out = new PrintWriter(renameLog)) {
                     out.println(str);

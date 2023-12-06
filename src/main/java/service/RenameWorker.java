@@ -76,6 +76,7 @@ public class RenameWorker {
     private static String getValidExtension(
         String name
     ) {
+        name = name.toUpperCase();
 
         for (String s : Extensions.valid) {
             if (name.endsWith(s)) {
