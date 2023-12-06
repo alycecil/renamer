@@ -3,8 +3,6 @@ package service;
 import model.EpisodeTitle;
 import model.ShowTitle;
 
-import java.text.NumberFormat;
-
 public class NewNameRenderer {
     public static String render(EpisodeTitle episodeTitle){
         ShowTitle show = episodeTitle.getTitle();
