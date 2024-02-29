@@ -12,6 +12,7 @@ public class Extensions {
         ".MPG",
         ".MP2",
         ".MPEG",
+        ".MKV",
         ".MPE",
         ".MPV",
         ".OGG",
