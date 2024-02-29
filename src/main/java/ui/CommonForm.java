@@ -122,7 +122,12 @@ public class CommonForm {
                 } else {
 
                 }
-                StateMachine.rootFolder = new File(folderTextField.getText()).getParentFile();
+                File file = new File(folderTextField.getText());
+                if (file.isDirectory()) {
+                    StateMachine.rootFolder = file;
+                } else {
+                    StateMachine.rootFolder = file.getParentFile();
+                }
             }
 
             StateMachine.show = RenameWorker.getShowTitleAndSeason();
@@ -297,4 +302,5 @@ public class CommonForm {
 
     /** @noinspection ALL */
     public JComponent $$$getRootComponent$$$() { return home; }
+
 }
