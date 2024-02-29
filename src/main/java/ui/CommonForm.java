@@ -267,18 +267,9 @@ public class CommonForm {
                 com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW,
             com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false
         ));
-        Go = new JButton();
-        Go.setText("Start");
-        home.add(Go, new com.intellij.uiDesigner.core.GridConstraints(3, 0, 1, 1,
-            com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER,
-            com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL,
-            com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK |
-                com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW,
-            com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false
-        ));
         status = new JLabel();
         status.setText("status");
-        home.add(status, new com.intellij.uiDesigner.core.GridConstraints(1, 0, 1, 1,
+        home.add(status, new com.intellij.uiDesigner.core.GridConstraints(2, 0, 1, 1,
             com.intellij.uiDesigner.core.GridConstraints.ANCHOR_WEST,
             com.intellij.uiDesigner.core.GridConstraints.FILL_NONE,
             com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED,
@@ -290,12 +281,21 @@ public class CommonForm {
         statusField.setLineWrap(true);
         statusField.setText("");
         statusField.setWrapStyleWord(true);
-        home.add(statusField, new com.intellij.uiDesigner.core.GridConstraints(2, 0, 1, 1,
+        home.add(statusField, new com.intellij.uiDesigner.core.GridConstraints(3, 0, 1, 1,
             com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER,
             com.intellij.uiDesigner.core.GridConstraints.FILL_BOTH,
             com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW,
             com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, null, new Dimension(150, 50), null, 0,
             false
+        ));
+        Go = new JButton();
+        Go.setText("Start");
+        home.add(Go, new com.intellij.uiDesigner.core.GridConstraints(1, 0, 1, 1,
+            com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER,
+            com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL,
+            com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK |
+                com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW,
+            com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false
         ));
         label1.setLabelFor(folderTextField);
     }
